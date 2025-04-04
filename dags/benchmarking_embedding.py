@@ -4,7 +4,7 @@ import enums
 from enums import EXTRA_ENVS
 
 from airflow import DAG
-from airflow.providers.cncf.kubernetes.operators.kubernetes_pod import KubernetesPodOperator
+from airflow.providers.kubernetes.operators.pod import KubernetesPodOperator
 from airflow.models import Variable
 from airflow.models.param import Param
 
